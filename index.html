@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Briefs</title>
+<style>
+  :root {
+    --meeting: #2563eb; --meeting-bg: #eff6ff;
+    --todo: #16a34a;    --todo-bg: #f0fdf4;
+    --free: #d97706;    --free-bg: #fffbeb;
+    --warn: #6b7280;
+    --text: #1f2937; --muted: #6b7280; --line: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fafafa; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header h1 { margin: 0 0 4px; font-size: 26px; }
+  header p { margin: 0 0 14px; color: var(--muted); }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+  .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+  .legend .meeting::before { background: var(--meeting); }
+  .legend .todo::before { background: var(--todo); }
+  .legend .free::before { background: var(--free); }
+  .day { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; margin-bottom: 24px; }
+  .day h2 { margin: 0 0 16px; font-size: 19px; }
+  .day h3 { margin: 22px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .item { border-left: 4px solid; border-radius: 6px; padding: 9px 12px; margin: 8px 0; }
+  .item .time { font-size: 13px; font-weight: 600; margin-right: 8px; white-space: nowrap; }
+  .item .title { font-weight: 600; }
+  .item .meta { color: var(--muted); }
+  .item p { margin: 4px 0 0; }
+  .item.meeting { border-color: var(--meeting); background: var(--meeting-bg); }
+  .item.meeting .time { color: var(--meeting); }
+  .item.todo { border-color: var(--todo); background: var(--todo-bg); }
+  .item.todo .time { color: var(--todo); }
+  .item.free { border-color: var(--free); background: var(--free-bg); }
+  .item.free .time { color: var(--free); }
+  .note { color: var(--warn); font-style: italic; margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Daily Briefs</h1>
+  <p>The newest day is at the top. All times are Pacific.</p>
+  <div class="legend">
+    <span class="meeting">Meeting</span>
+    <span class="todo">Time-blocked to-do / prep</span>
+    <span class="free">Free / reminder</span>
+  </div>
+</header>
+
+<!-- NEW DAYS GO BELOW THIS LINE -->
+
+<section class="day" id="2026-11-03">
+  <h2>Tuesday, Nov 3, 2026</h2>
+
+  <h3>Schedule</h3>
+  <div class="item todo">
+    <span class="time">8:00–9:30 AM</span><span class="title">Prep for Andra</span>
+    <p>Get the HBDI debrief ready.</p>
+  </div>
+  <div class="item meeting">
+    <span class="time">9:30–10:45 AM</span><span class="title">HBDI Debrief with Andra Kovacs</span> <span class="meta">· Mariposa Arts Council · Zoom</span>
+    <p><strong>Prep:</strong> Andra is Director of School Programs and runs the Arts Council's Day Camp work. Have her HBDI results ready and connect them to the <strong>Arts Council / SFC Day Camp partnership</strong> facilitation, set for <strong>Nov 19</strong>.</p>
+  </div>
+  <div class="item todo">
+    <span class="time">11:00–11:45 AM</span><span class="title">Prep for Pam</span>
+    <p>Set the walkthrough order and test the Resend login.</p>
+  </div>
+  <div class="item meeting">
+    <span class="time">1:00–2:00 PM</span><span class="title">ATOU Tech Discussion</span> <span class="meta">· Pam Evers, Meghan Adamski (accepted), Dan Wu (optional, no reply yet) · Zoom</span>
+    <p><strong>Prep:</strong> Pam asked for this so she can handle issues herself. Walk through <strong>Replit, GitHub, and Resend</strong>, and show where <strong>bounced/suppressed emails</strong> appear. If <strong>bounce alerts</strong> aren't set up yet, set them up together now that Pam has invited you to Resend. Dan asked on Oct 30 whether you'd <strong>record or transcribe</strong> the session, so decide that before you start.</p>
+  </div>
+  <div class="item todo">
+    <span class="time">2:30–3:30 PM</span><span class="title">Work on Sales Agents</span>
+    <p>Sales Agent Sprint with Scott Eggert. Priority #1 is the Week 1 bot, then the four-week curriculum.</p>
+  </div>
+
+  <h3>Follow-ups due</h3>
+  <p class="note">Couldn't read the deal sheet (Google Sheets isn't authorized yet), so today's follow-ups and anything overdue are missing.</p>
+
+  <h3>One deal to push</h3>
+  <p class="note">Couldn't pick one because the deal sheet is unreadable.</p>
+</section>
+
+</main>
+</body>
+</html>
