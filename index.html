@@ -21,7 +21,7 @@
   .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
   .legend .meeting::before { background: var(--meeting); }
   .legend .todo::before { background: var(--todo); }
-  .legend .free::before { background: var(--free); }
+  .legend .free::before { background: none; border: 1px solid var(--muted); }
   .day { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; margin-bottom: 24px; }
   .day h2 { margin: 0 0 16px; font-size: 19px; }
   .day h3 { margin: 22px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
@@ -34,8 +34,8 @@
   .item.meeting .time { color: var(--meeting); }
   .item.todo { border-color: var(--todo); background: var(--todo-bg); }
   .item.todo .time { color: var(--todo); }
-  .item.free { border-color: var(--free); background: var(--free-bg); }
-  .item.free .time { color: var(--free); }
+  .item.free { border-left: 4px solid transparent; background: none; }
+  .item.free .time { color: var(--muted); }
   .note { color: var(--warn); font-style: italic; margin: 6px 0; }
 </style>
 </head>
